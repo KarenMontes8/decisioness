@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Cotizador de Póliza de Seguro</title>
+    <link rel ="stylesheet" href="style.css"/>
+</head>
+<body>
+    <h1>Cotizador de Póliza de Seguro</h1>
+
+    <label for="tipoPoliza">Tipo de póliza:</label>
+    <select id="tipoPoliza">
+        <option value="A">Cobertura Amplia (A)</option>
+        <option value="B">Daños a Terceros (B)</option>
+    </select><br><br>
+
+    <label>¿Bebe alcohol habitualmente?</label>
+    <input type="checkbox" id="bebe"><br>
+
+    <label>¿Usa lentes?</label>
+    <input type="checkbox" id="lentes"><br>
+
+    <label>¿Tiene alguna enfermedad (cardíaca o diabetes)?</label>
+    <input type="checkbox" id="enfermedad"><br><br>
+
+    <label for="edad">Edad:</label>
+    <input type="number" id="edad"><br><br>
+
+    <button onclick="calcularCosto()">Calcular Costo</button>
+
+    <p id="resultado"></p>
+    <script src="./scripts/problemas.js"></script>
+</body>
+</html>

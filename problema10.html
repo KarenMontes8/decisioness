@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Vacaciones - La Tortuga</title>
+    <link rel ="stylesheet" href="style.css"/>
+</head>
+<body>
+    <h1>¿A dónde puedes ir de vacaciones?</h1>
+
+    <label for="dinero">Dinero disponible ($):</label>
+    <input type="number" id="dinero" step="0.01"><br><br>
+
+    <label for="costoKm">Costo por kilómetro ($):</label>
+    <input type="number" id="costoKm" step="0.01"><br><br>
+
+    <button onclick="determinarDestino()">Ver destinos posibles</button>
+
+    <p id="resultado"></p>
+    <script src="./scripts/problemas.js"></script>
+</body>
+</html>
